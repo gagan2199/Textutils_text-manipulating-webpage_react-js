@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
-import TextForm from './components/TextForm';
+import TextForm from './components/Textform';
 
 function App() {
   return (
