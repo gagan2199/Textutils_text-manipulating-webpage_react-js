@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 
 
 export default function TextForm() {
+
     const onclickHandle=()=>
     {
         console.log("clicked on button")
@@ -11,10 +12,25 @@ export default function TextForm() {
 
     const onclicklowHandle=()=>
     {
-        console.log("clicked on button")
+        console.log("clicked on low button")
         let newText= text.toLocaleLowerCase();
         setText(newText);
     }
+
+    const onclickclr=()=>
+    {
+        console.log("clicked on clr button")
+        let newText= "";
+        setText(newText);
+    }
+
+    // const onclickbld=()=>
+    // {
+    //     console.log("clicked on clr button")
+    //     let newText=text;
+    //     setText(newText);
+    // }
+
 
     const changeHandle=(event)=>
     {
@@ -31,6 +47,8 @@ export default function TextForm() {
   <hr />
    <button className="btn btn-primary" onClick={onclickHandle}>Convert to Upper Case</button>
    <button className="btn btn-primary mx-2" onClick={onclicklowHandle}>Convert to Upper Case</button>
+   <button className="btn btn-primary mx-2" onClick={onclickclr}>Clear</button>
+   {/* <button className="btn btn-primary mx-2" onClick={onclickbld}>Bold</button> */}
    <hr />
    <div className="container">
     <h3>this text summary :</h3>
