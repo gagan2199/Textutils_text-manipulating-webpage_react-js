@@ -28,6 +28,7 @@ export default function TextForm() {
     // {
     //     console.log("clicked on clr button")
     //     let newText=text;
+    //     newText.Style.color='red';
     //     setText(newText);
     // }
 
