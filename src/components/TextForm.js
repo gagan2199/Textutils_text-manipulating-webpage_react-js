@@ -21,7 +21,7 @@ export default function TextForm() {
     <h1>Enter text here:</h1>
     <textarea className="form-control" value={text} onChange={changeHandle} id="boxarea" rows="3"></textarea>
   </div>
-   <button className="btn btn-primary" onClick={onclickHandle}>Convert to upper case</button>
+   <button className="btn btn-primary" onClick={onclickHandle}>Convert to Upper Case</button>
    </>
   )
 }
