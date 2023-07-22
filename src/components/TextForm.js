@@ -9,6 +9,13 @@ export default function TextForm() {
         setText(newText);
     }
 
+    const onclicklowHandle=()=>
+    {
+        console.log("clicked on button")
+        let newText= text.toLocaleLowerCase();
+        setText(newText);
+    }
+
     const changeHandle=(event)=>
     {
         setText(event.target.value);
@@ -17,11 +24,25 @@ export default function TextForm() {
     const[text,setText]=useState("enter your text");
   return (
   <>
-  <div className="mb-3">
+  <div className="container" >
     <h1>Enter text here:</h1>
     <textarea className="form-control" value={text} onChange={changeHandle} id="boxarea" rows="3"></textarea>
   </div>
+  <hr />
    <button className="btn btn-primary" onClick={onclickHandle}>Convert to Upper Case</button>
+   <button className="btn btn-primary mx-2" onClick={onclicklowHandle}>Convert to Upper Case</button>
+   <hr />
+   <div className="container">
+    <h3>this text summary :</h3>
+    <p>No. of words: {text.split(" ").length} , The length of text is: {text.length}</p>
+    <p>Time taken to read: {0.008 * text.split(" ").length} minutes </p>
+    <hr />
+    <h2>Preview:</h2>
+    <p>{text}</p>
+
+
+   </div>
+
    </>
   )
 }
