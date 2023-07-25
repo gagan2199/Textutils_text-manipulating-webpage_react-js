@@ -14,10 +14,14 @@ function App() {
     if(mode ==='light')
     {
       setmode('dark');
+      document.body.style.backgroundColor="grey";
     }
+
     else
     {
       setmode('light');
+      document.body.style.backgroundColor="white";
+
     }
   }
   return (
@@ -26,6 +30,7 @@ function App() {
    <div className="container" >
    <TextForm></TextForm>
    {/* <About></About> */}
+  
    
    </div>
   
