@@ -30,8 +30,6 @@ function App() {
    <div className="container" >
    <TextForm></TextForm>
    {/* <About></About> */}
-  
-   
    </div>
   
    </>
