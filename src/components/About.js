@@ -6,26 +6,23 @@ export default function About() {
     backgroundColor: 'white'
   });
 
-  const [btn, setbtn]=useState('switch to dark');
+  const [btn, setbtn] = useState('switch to dark');
 
-  const toggledark = () =>
-  {
-    if(myStyle.color=='black')
-    {
+  const toggledark = () => {
+    if (myStyle.color == 'black') {
       setmyStyle({
         color: 'white',
         backgroundColor: 'black'
       })
       setbtn("switch to light");
     }
-    else
-    {
+    else {
       setmyStyle(
         {
           color: 'black',
-          backgroundColor : 'white'
+          backgroundColor: 'white'
         })
-        setbtn("switch to dark");
+      setbtn("switch to dark");
     }
   }
 
@@ -43,8 +40,7 @@ export default function About() {
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseOne"
                   aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
+                  aria-controls="collapseOne">
                   Accordion Item #1
                 </button>
               </h2>
@@ -133,9 +129,9 @@ export default function About() {
         </div>
       </div>
       <div className="container my-1" >
-      <button className="btn-btn-primary" onClick={toggledark}>{btn}</button>
+        <button className="btn-btn-primary" onClick={toggledark}>{btn}</button>
       </div>
-     
+
     </>
   );
 }
