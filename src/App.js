@@ -3,7 +3,14 @@ import { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/Textform';
-// import About from './components/About';
+import About from './components/About';
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   // Link,
+//   Routes
+// } from "react-router-dom";
 
 function App() {
 
@@ -15,22 +22,37 @@ function App() {
     {
       setmode('dark');
       document.body.style.backgroundColor="grey";
+      document.title='Textutils-Dark Mode';
+      // setInterval(() => {
+      //   document.title='Just Illusion';
+      // }, 2000);
+      // setInterval(() => {
+      //   document.title='Calm Down';
+      // }, 1500);
     }
 
     else
     {
       setmode('light');
       document.body.style.backgroundColor="white";
+      document.title='Textutils-Light Mode';
 
     }
   }
   return (
     <>
+    {/* <Router> */}
    <Navbar title="Textutils" mode={mode} toggleMode={togMode}></Navbar>
    <div className="container" >
-   <TextForm></TextForm>
-   {/* <About></About> */}
-   </div>
+   {/* <Routes>
+    <Route path="/about" element={<About/>}>
+    </Route>
+    <Route  path="/" element={<TextForm/>}>
+    </Route>
+  </Routes> */}
+  <TextForm/>
+  </div>
+  {/* </Router> */}
   
    </>
   );

@@ -9,7 +9,7 @@ export default function About() {
   const [btn, setbtn] = useState('switch to dark');
 
   const toggledark = () => {
-    if (myStyle.color == 'black') {
+    if (myStyle.color === 'black') {
       setmyStyle({
         color: 'white',
         backgroundColor: 'black'
