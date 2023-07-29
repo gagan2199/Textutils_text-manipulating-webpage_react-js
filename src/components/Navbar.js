@@ -20,7 +20,7 @@ export default function Navbar(props) {
         </li>
         <li className="nav-item">
           {/* <Link className="nav-link" to="/about">{props.about}</Link> */}
-          <a className="nav-link" href="/about">{props.about}</a>
+          {/* <a className="nav-link" href="/about">{props.about}</a> */}
         </li>
       </ul>
       {/* <form className="d-flex"> */}
