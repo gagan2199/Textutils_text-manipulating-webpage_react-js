@@ -12,7 +12,7 @@ export default function About() {
     if (myStyle.color === 'black') {
       setmyStyle({
         color: 'white',
-        backgroundColor: 'black'
+        backgroundColor: '#1d3b59'
       })
       setbtn("switch to light");
     }

@@ -4,13 +4,13 @@ import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/Textform';
 import About from './components/About';
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   // Link,
-//   Routes
-// } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  // Link,
+  Routes
+} from "react-router-dom";
 
 function App() {
 
@@ -21,7 +21,7 @@ function App() {
     if(mode ==='light')
     {
       setmode('dark');
-      document.body.style.backgroundColor="grey";
+      document.body.style.backgroundColor="#3e5e7e";
       document.title='Textutils-Dark Mode';
       // setInterval(() => {
       //   document.title='Just Illusion';
@@ -41,18 +41,18 @@ function App() {
   }
   return (
     <>
-    {/* <Router> */}
+    <Router>
    <Navbar title="Textutils" mode={mode} toggleMode={togMode}></Navbar>
    <div className="container" >
-   {/* <Routes>
+   <Routes>
     <Route path="/about" element={<About/>}>
     </Route>
     <Route  path="/" element={<TextForm/>}>
     </Route>
-  </Routes> */}
-  <TextForm/>
+  </Routes>
+  
   </div>
-  {/* </Router> */}
+  </Router>
   
    </>
   );

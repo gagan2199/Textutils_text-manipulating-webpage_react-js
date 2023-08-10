@@ -53,8 +53,8 @@ export default function TextForm() {
    <hr />
    <div className="container">
     <h3>this text summary :</h3>
-    <p>No. of words: {text.split(" ").length} , The length of text is: {text.length}</p>
-    <p>Time taken to read: {0.008 * text.split(" ").length} minutes </p>
+    <p>No. of words: {text.split(" ").filter((element)=> {return element.length!==0}).length} , The length of text is: {text.length}</p>
+    <p>Time taken to read: {0.008 * text.split(" ").filter((element)=> {return element.length!==0}).length} minutes </p>
     <hr />
     <h2>Preview:</h2>
     <p>{text}</p>
