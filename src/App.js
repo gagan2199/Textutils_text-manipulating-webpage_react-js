@@ -45,9 +45,9 @@ function App() {
    <Navbar title="Textutils" mode={mode} toggleMode={togMode}></Navbar>
    <div className="container" >
    <Routes>
-    <Route path="/about" element={<About/>}>
+    <Route path="/about" element={<About />}>
     </Route>
-    <Route  path="/" element={<TextForm/>}>
+    <Route  path="/" element={<TextForm mode={mode}/>}>
     </Route>
   </Routes>
   
